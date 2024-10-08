@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paddy website</title>
+
+    <!-- daisy config -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css linking up  -->
+     <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="flex w-11/12 mx-auto">
+        <div class="navbar bg-base-100 lg:mx-auto">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li>
+                    <a>Shop</a>
+                    
+                  </li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+               <div class="flex gap-2 justify-center aligns-center">
+                <img class="w-7 h-7 pt-1" src="./images/logo.webp" alt="">
+                <h1 class="text-3xl font-bold">Paddy</h1>
+               </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li>
+                  <a> Shop</a>
+                </li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end ">
+              <a class="btn btn-circle "><img class="w-[30px] h-[30px] object-cover " src="https://img.icons8.com/?size=100&id=fUUEbUbXhzOA&format=png&color=000000" alt=""></a>
+            </div>
+          </div>
+    </header>
+    
+    <main>
+
+        <!-- banner section -->
+
+        <section class="w-11/12 mx-auto">
+            <!-- Text Container  -->
+            
+             <!-- hero part  -->
+             <div class="hero my-10 lg:my-0  lg:min-h-11/12 mx-auto">
+                <div class="hero-content text-center">
+                  <div class="lg:w-2/3">
+                    <div class="flex gap-1 justify-center aligns-center">
+                        <p class="font-bold text-gray-400 lg:text-center">Bringing Families Together.</p>
+                        <img class="w-5 h-5 text-gray-500" src="https://img.icons8.com/?size=100&id=87&format=png&color=000000" alt=""> 
+                        <img class="w-5 h-5 text-gray-500" src="https://img.icons8.com/?size=100&id=3104&format=png&color=000000" alt="">
+                    </div>
+                    
+                    <h1 class="text-6xl font-bold ">Your Path to Adoption Starts Here</h1>
+                    <p class="py-6">
+                        It's the right time to listen to your mind and bring happiness in your life by adopting 
+                        a paddy. Your small step can change the life of others.
+                    </p>
+                    <button class="btn btn-primary bg-[#0E7A81] hover:bg-[#115156] border border-[#0E7A81] " onclick="location.href='#target-section'">View More</button>
+                  </div>
+                </div>
+              </div>
+            <!-- Image Container  -->
+            <div class="flex justify-center aligns-center">
+                <img class="w-full h-full  lg:w-2/3 lg:h-1/2  " src="./images/pet.webp" alt="">
+
+            </div>
+        </section>
+
+
+        <!-- Adopt your best friend section  -->
+         <section id="target-section" class="lg:my-10 w-11/12 mx-auto">
+            <div class="text-center">
+                <h3 class="font-bold text-xl lg:text-3xl mb-5">Adopt your best friend</h3>
+                <p class="text-center text-[#131313B3] lg:w-1/2 mx-auto">A paddy can make your day enjoyable and removes loneliness from your life.
+                    People tend to make a strong connection with there pet that makes them fill safe and also brings a smile 
+                    in there face.
+                </p>
+            </div>
+
+            <!-- button part  -->
+            <div id="categories" class="flex lg:gap-10 justify-center mx-auto lg:my-10">
+        
+
+            </div>
+
+
+              <!-- Pet details -->
+            <div class="mx-auto">
+                <div class="flex justify-between my-10">
+                    <h3 class="text-lg font-bold">Best Deal For you</h3>
+                    <button onclick="displayCards()" class="btn btn-medium bg-[#0E7A81] text-white text-md lg:text-md font-bold">Sort By Price</button>
+                </div>
+
+                <div>
+                    <!-- card part -->
+
+                <div class="flex flex-col lg:flex-row gap-3">
+                    
+                    <div id="pet-card-container" class="grid grid-cols-2 lg:grid-cols-3 gap-5 basis-3/4 snap-y">
+                   
+
+                    
+
+                    </div>
+                    <div id="pet-liked-image" class="border border-gray rounded-box basis-1/4 flex-grow grid grid-cols-2">
+    
+                    </div>
+                    
+
+                </div>    
+               
+            </div>
+
+
+
+
+         </section>
+
+
+         <!-- Open the modal using ID.showModal() method -->
+<button class="btn hidden" onclick="customModal.showModal()">open modal</button>
+<dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="modal-content">
+
+    </div>
+    <div class="">
+      <form method="dialog">
+        <!-- if there is a button in form, it will  close the modal -->
+        <button class="btn btn-block   bg-[#0E7A811A] text-[#0E7A81]">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn hidden" onclick="my_modal_2.showModal()">open modal</button>
+<dialog id="my_modal_2" class="modal">
+  <div class="modal-box">
+    <div id="model-content-2">
+    
+
+    </div>
+   
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+    </main>
+
+    
+
+    <!-- Footer section -->
+    <footer class="footer bg-[#131313] text-base-content px-20 py-10">
+        <nav>
+            <div class="flex gap-2 justify-center aligns-center">
+                <img class="w-5 h-5 pt-1" src="./images/logo.webp" alt="">
+                <h1 class="text-xl font-bold text-white">Paddy</h1>
+               </div>
+          <div class="text-white">
+            <p>
+            Location: av. Washington 165, NY CA 54003
+            </p>
+            <P>Phone: +31 85 964 47 25</P>
+            <P>Email: info@yourdomain.com</P>
+            <P>Openings hours: 9.00 AM - 5.00 PM</P>
+            
+            
+            
+           
+          </div>
+          <div class="flex gap-2">
+            <a href=""><img class="w-6 h-6" src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt=""></a>
+            <a href=""><img class="w-6 h-6"  src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000" alt=""></a>
+            <a href=""><i class="fa-brands fa-x-twitter text-white w-5 h-5 mt-1"></i></a>
+            <a href=""><img class="w-6 h-6"  src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" alt=""></a>
+          </div>
+        </nav>
+       
+        <nav class="text-white flex-col">
+          <h6 class="footer-title">Usefull Links</h6>
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">About Us</a>
+          <a class="link link-hover">Animals</a>
+          <a class="link link-hover">Foundation</a>
+          <a class="link link-hover">Contacts</a>
+        </nav>
+        <form class="text-white">
+          <h6 class="footer-title">Drop a Message</h6>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text text-white">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="input input-bordered join-item rounded" />
+              
+            </div>
+            
+          </fieldset>
+          <button class="btn btn-md bg-[#0E7A81] text-white join-item my-5">Subscribe</button>
+        </form>
+     
+        
+      </footer>
+
+
+
+
+
+
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
